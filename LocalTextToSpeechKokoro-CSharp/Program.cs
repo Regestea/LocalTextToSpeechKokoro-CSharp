@@ -7,7 +7,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        KokoroTTS tts = KokoroTTS.LoadModel("kokoro.onnx");
+        KokoroTTS tts = KokoroTTS.LoadModel();
         KokoroVoice heartVoice = KokoroVoiceManager.GetVoice("af_heart");
         var ttsQueue = new TtsQueueService(tts, heartVoice);
         ttsQueue.EnqueueRange(new[]
