@@ -10,4 +10,8 @@
         <InvariantGlobalization>true</InvariantGlobalization>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="KokoroSharp" Version="0.6.1" />
+    </ItemGroup>
+
 </Project>
